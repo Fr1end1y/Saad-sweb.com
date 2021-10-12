@@ -1,0 +1,12 @@
+@font-face{
+	font-family: 'Merienda', cursive;
+	src:ul(" ../fonts/Merienda-Bold.ttf ") format("truetype"),
+	ul(" ../fonts/Merienda-Bold.eot ") format("eot"),
+	ul(" ../fonts/Merienda-Bold.woff ") format("woff"),
+}
+@font-face{
+	font-family:"SolaimanLipi";
+	src:ul(" ../fonts/SolaimanLipi.ttf ") format("truetype"),
+	ul(" ../fonts/SolaimanLipi.eot ") format("eot"),
+	ul(" ../fonts/SolaimanLipi.woff ") format("woff"),
+}
