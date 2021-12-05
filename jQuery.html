@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>jQuery</title>
+	<link rel="stylesheet" href="style.css" />
+	
+	<link rel="icon" href="PICS/favicon.png" type="image/png" />
+	
+	<link rel="shortcut icon" href="PICS/favicon.ico" />
+<!--	<script type="text/javascript" src="scripts.js">
+	</script>-->
+	
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	
+	<script type="text/javascript" src="jQuery.js"></script>
+</head>
+<body>
+
+	<p class="hide">Thanks for visiting my website</p>
+	<button id="hide">Hide & Seek</button>
+	
+	<div class="fade1"></div>
+	<div class="fade11"></div>
+	<div class="fade111"></div>
+	<div class="fade1111"></div>
+	
+	<button id="fade">Fade away</button>
+	
+	<div id="animation">SURPRISE</div>
+		
+	<!--
+	<p class="hidden">Click me i'll be invisible ;)</p>
+	<p>This is a hidden line</p>
+	<p>This is a hidden line</p>
+	<p>This is a hidden line</p>
+	<p>This is a hidden line</p>
+	-->
+
+	<!--<script>
+		$(document).ready(function(){
+			//$(".hidden").hide();
+			$(".hidden").click(function(){
+				$(this).hide();
+			})
+		});
+	</script>-->
+	<script>
+	$(document).ready(function(){
+			$("#hide").click(function(){
+				$(".hide").toggle(1000);
+			});
+		});
+	</script>
+	<!---<<script>
+	$(document).ready(function(){
+			$("#fade").click(function(){
+				$(".fade1").fadeToggle(1000);
+				$(".fade11").fadeToggle(2000);
+				$(".fade111").fadeToggle(3000);
+				$(".fade1111").fadeToggle(4000);
+			});
+		});
+	</script>
+	script >
+		$(document).ready(function(){
+			$("").click(function(){
+				$
+			});
+		});
+	</script>
+	<script >
+		$(document).ready(function(){
+			$("#slide").click(function(){
+				$("#panel").slideToggle(1000);
+			});
+		});
+	</script>
+	<script >
+		$(document).ready(function(){
+			$("#animator").click(function(){
+				$("#animate").animate({
+					height:'200px',
+					width:'200px',
+					left:'500px',
+					top:'100px',
+				});
+			});
+		});
+	</script>-->
+	<script>
+$(document).ready(function(){
+    $("#Animate").click(function(){
+		var myAnimation = $("#animation");
+		myAnimation.animate({width:'150px'}, "slow");
+		myAnimation.animate({height:'150px'});
+		myAnimation.animate({width:'200px'}, 1500);
+		myAnimation.animate({height:'250px'});
+		myAnimation.animate({width:'150px'});
+		myAnimation.animate({left:'150px'}, "fast");
+		myAnimation.animate({top:'50px'});
+		myAnimation.animate({fontSize:'2em'});
+		myAnimation.animate({textAlign:'center'});
+		myAnimation.animate({backgroundColor:'cyan'});
+		myAnimation.animate({color:'white'});
+		myAnimation.animate({left:'0'});
+		myAnimation.animate({top:'0'});
+		myAnimation.animate({width:'1360px'}, 4000);
+		myAnimation.animate({height:'656px'}, 4000);
+		myAnimation.animate({backColor:'cyan'});
+		myAnimation.animate({backColor:'purple'});
+		myAnimation.animate({backColor:'pink'});
+		myAnimation.animate({backColor:'black'});
+		
+		});
+		$("#stop").click(function(){
+		$("#animation").stop(true);
+	});
+});
+</script>
+<button id="Animate">Click to Animate</button><br><br>
+<button id="stop">Click to Stop</button><br><br>
+	
+</body>
+</html>
